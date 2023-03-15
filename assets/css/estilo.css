@@ -1,0 +1,18 @@
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* SECCIÓN NAVEGACIÓN */
+.nav_color {
+    background-color: initial;
+}
+
+
+/* PARA SEPARAR LA ETIQUETA NAV QUE TAPA EL MAIN  por eso se coloca + la siguiente -- ***CUANDO SE TAPA EL TEXTO*/
+.navbar + header{
+    margin-top: 3rem;
+}
+
+.div_card {
+    width: 18rem;
+}
