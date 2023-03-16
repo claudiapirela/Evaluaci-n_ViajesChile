@@ -30,10 +30,10 @@
 <body>
     <!-- SECCIÓN BARRA DE NAVEGACIÓN  -->
     <!-- LA CLASE FIXED-TOP QUEDA LA BARRA DE NAVEGACIÓN F I J A EN LA PARTE SUPERIOR  -->
-    <nav class="navbar navbar-expand-lg nav_color fixed-top ">
+    <nav class="navbar navbar-expand-lg nav_color fixed-top">
         <div class="container-fluid ">
             <a class="navbar-brand text-white" href="#"> <img src="assets/img/viajes.svg" alt="" width="111px"
-                    height="24px"></a>
+                    height="24px">Viajes Chile</a>
             <button class="navbar-toggler navbar-dark border-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -46,13 +46,13 @@
                         <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Quienes Somos</a>
+                        <a class="nav-link text-white" href="#sectionQuienes">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Destacados</a>
+                        <a class="nav-link text-white" href="#sectionDestacados">Destacados</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="#">Contacto</a>
+                        <a class="nav-link text-white" href="#sectionContacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@
     </nav>
     <!-- CABEZERA -->
     <header>
-        <!-- SECCIÓN CARUSEL  -- AUTOPLAY-->
+        <!-- SECCIÓN CAROUSEL  -- AUTOPLAY-->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -87,26 +87,22 @@
         </div>
     </header>
 
-
-
-
     <!-- SECCIÓN PINCIPAL -->
     <main>
-        <!-- Quienes Somos -->
-        <section>
-            <h1 class="text-center h1_product text-white">DESTACADOS</h1>
-            <br>
+        <!-- SECCIÓN ¿QUIÉNES SOMOS? -->
+        <section class="container  formato_form" id="sectionQuienes">
+            <h1 class="text-center text-white">¿QUIÉNES SOMOS?</h1>
+            <hr>
             <!-- DIVISIÓN PARA LOS ICONOS Y SUS TEXTOS LOREM -->
 
             <div class="d-flex py-4">
                 <!-- DIVISION PARA EL PRIMER CAJA CON ICONO CON LOREM -->
                 <div>
-                    <div class="bg-info"><i class="fa-solid fa-plane fa-3x bg-info"></i></div>
+                    <div class="bg-info iconos_centrado"><i class="fa-solid fa-plane fa-2x bg-info "></i></div>
 
-                    <p class="text-white">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus eos,
-                        veritatis, veniam
-                        aspernatur praesentium optio architecto harum dolorem molestiae dolorum, quos odio rem corrupti
-                        reprehenderit! Eius dolorum ab labore animi.</p>
+                    <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, numquam quae.
+                        Doloribus dolorem suscipit sunt accusamus rem excepturi qui quam dolor blanditiis ut iusto
+                        corporis velit, accusantium dolorum, maxime possimus!</p>
                 </div>
                 <!-- DIVISION PARA EL SEGUNDO CAJA CON ICONO CON LOREM-->
                 <div>
@@ -115,12 +111,13 @@
                         dolorem libero
                         commodi necessitatibus. Autem, vitae voluptatibus sed consequatur quasi doloremque vel
                         consequuntur veritatis cum omnis velit ipsa alias.</p>
-                    <div class="bg-info"><i class="fa-solid fa-mountain fa-3x bg-info"></i></div>
+                    <div class="bg-info iconos_centrado"><i class="fa-solid fa-mountain fa-2x bg-info "></i></div>
 
                 </div>
                 <!-- DIVISION PARA EL TERCER CAJA CON ICONO CON LOREM-->
                 <div>
-                    <div class="bg-info"><i class="fa-solid fa-route fa-3x bg-info"></i></div>
+                    <div class="bg-info iconos_centrado"><i class="fa-solid fa-route fa-2x bg-info iconos_centrado"></i>
+                    </div>
 
                     <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id et explicabo
                         possimus iusto ad
@@ -129,20 +126,21 @@
                 </div>
             </div>
         </section>
-        <!-- DESTACADOS -->
+        <!-- SECCIÓN DESTACADOS -->
         <!-- SECCIÓN DE TARJETA CON IMAGENES  clase CONTAINER para no verlo tan pegados fijos / CONTAINER-FLUID para ir de canto a canto-->
-        <section class="container-fluid seccion_trabajos">
-            <div class="container">
+        <section class="container" id="sectionDestacados" >
+            <div >
                 <h1 class="text-center text-white">DESTACADOS</h1>
+                <br>
                 <!-- ESTE DIV ES PARA LAS FILAS DEL GRID -->
-                <div class="row m-auto mt-5">
-                    <!-- ESTE DIV ES PARA LAS COLUMNAS sm-12: para ver 1 imagen  y se 1 imagen  lg-4 se va a ver 3 imagenes    -->
-                    <!-- LA CLASE MARGIN TOP: mt-3  eJE Y: my-3 EJE X: mx-3 -->
-                    <div class="col-sm-12 col-lg-3 my-3">
+                <div class="row">
+                    <!-- ESTE DIV ES PARA LAS COLUMNAS sm-12: para ver 1 imagen  y col-md-3 se va a ver 4 columnas con card-imagen    -->
+                    <!-- PRIMERA COLUMNA -->
+                    <div class="col-sm-12 col-md-3">
                         <!-- PEGAR EL CARD DEL BOOTSTRAP - IMAGES -->
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 250px;">
                             <img src="assets/img/card1.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <div class="card-body bg-info text-white">
                                 <p class="card-text">Some quick example text to build on the card title and make up the
                                     bulk of the card's content.</p>
                             </div>
@@ -150,36 +148,36 @@
                     </div>
 
                     <!-- SEGUNDA COLUMANA -->
-                    <div class="col-sm-12 col-lg-3 my-3">
+                    <div class="col-sm-12 col-md-3">
                         <!-- PEGAR EL CARD DEL BOOTSTRAP - IMAGENES -->
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 250px;">
                             <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                            <div class="card-body bg-info">
+                                <p class="card-text text-white">Some quick example text to build on the card title and make up the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- TERCERA COLUMNA -->
-                    <div class="col-sm-12 col-lg-3 my-3">
+                    <div class="col-sm-12 col-md-3">
                         <!-- PEGAR EL CARD DEL BOOTSTRAP - IMAGENES -->
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 250px;">
                             <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                            <div class="card-body bg-info">
+                                <p class="card-text text-white ">Some quick example text to build on the card title and make up the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- CUARTA COLUMNA -->
-                    <div class="col-sm-12 col-lg-3 my-3">
+                    <div class="col-sm-12 col-md-3">
                         <!-- PEGAR EL CARD DEL BOOTSTRAP - Kitchen sink -->
-                        <div class="card" style="width: 18rem;">
+                        <div class="card" style="width: 250px;">
                             <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Some quick example text to build on the card title and make up the
+                            <div class="card-body bg-info">
+                                <p class="card-text text-white ">Some quick example text to build on the card title and make up the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -188,78 +186,62 @@
             </div>
         </section>
         <!-- SECCION DE FORMULARIO -->
-        <section class="container text-center">
+        <section class="container text-center formato_form">
             <div>
-                <h1 class="text-center h1_product text-white">CONTACTO</h1>
+                <h1 class="text-center text-white">CONTACTO</h1>
+                <br>
                 <!-- CON LA CLASE TEXT-STRAR SE VA TODO EL TEXTO A LA IZQUIERDA -->
                 <form class="text-start">
-                    <div class="mb-3">
+                    <div class="mb-3 text-white">
                         <label for="exampleInputEmail1" class="form-label">Nombre</label>
                         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-3 text-white">
                         <label for="exampleInputEmail1" class="form-label">Asunto</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
 
                     </div>
 
-                    <div class="mb-3">
+                    <div class="mb-3 text-white">
                         <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <div class="d-grid gap-2 d-md-flex ">
-                        <button type="submit" class="btn btn-primary ">Enviar</button>
+                        <button type="submit" class="btn btn-primary bg-info ">Enviar</button>
                     </div>
-
                 </form>
+            </div>
+        </section>
+    </main>
+    <!-- SECCIÓN PIE DE PÁGINA         -->
+    <footer class="container-fluid text-white bg-info">
+        <!-- SECCION DE ICONOS DE REDES SOCIALES -->
+        <!-- LA CLASE CONTAINER-FLUID SE CENTRA  -->
+        <section class="container-fluid" id="sectionContacto">
+            <div class="row">
+                <!-- PARA AGREGAR EL TEXTO "VIAJES CHILE" en 3 COLUMNAS -->
+                <div class="col-sm-3 col-md-3 my-1">
+                    <h6 class="text-center text-white">VIAJES CHILE</h6>
+                </div>
+                <!-- PARA AGREGAR LOS ICONOS DE REDES SOCIALES -->
+                <div class="col-md-9 my-1 iconos_centrado">
+                    <!-- PARA COLOCAR DENTRO DE ESTA CAJA SE AGREGA UNA NUEVA CAJA CON 9 COLUMNAS -->
 
+                   <a href="https://github.com/"><i class="fa-brands fa-github mx-1 fondo_iconos"></i></a> 
+                   <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin mx-1 fondo_iconos"></i></a> 
+                   <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter mx-1 fondo_iconos"></i></a> 
+                   <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook mx-1 fondo_iconos"></i></a> 
+                </div>
             </div>
 
         </section>
 
-
-        
-    </main>
-        
-   <footer class="container-fluid text-white bg-info py-4">
-        <!-- SECCION DE ICONOS DE TARJETAS -->
-        <!-- LA CLASE CONTAINER-FLUID SE CENTRA  -->
-        <section class="container-fluid fondo_iconos py-4 iconos_tarjetas ">
-            <div class="row">
-                <!-- PARA AGREGAR EL TEXTO "AHORA PAGAMOS" -->
-                <div class="col-sm-3 col-lg-3 my-3">
-                    <h2 class="text-center text-white">Viejes Chile</h2>
-                </div>
-                <!-- PARA AGREGAR LOS ICONOS DE PAGO -->
-                <div class="col-sm-9">
-                    <!-- PARA COLOCAR DENTRO DE ESTA CAJA SE AGREGA UNA NUEVA CAJA CON 12 COLUMNAS -->
-                    
-                        <!-- PARA AGREGAR 6 IMAGENES DIVIDIR 12/6 = 2 -->
-                         <i class="fa-brands fa-github"></i>
-                         <i class="fa-brands fa-linkedin"></i>
-                         <i class="fa-brands fa-twitter"></i>
-                         <i class="fa-brands fa-facebook"></i>
-                    
-                   
-
-                </div>
-            </div>
-
-        </section>    
-
-
-        
-      
-   </footer>
-
-
-
-
-        <!-- COLOCAR LOS ARCHIVOS DESCARGADOS DEL CDN DEL BOOTSTRAP -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-            crossorigin="anonymous"></script>
+    </footer>
+    <!-- COLOCAR LOS ARCHIVOS DESCARGADOS DEL CDN DEL BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 
 </body>
 
