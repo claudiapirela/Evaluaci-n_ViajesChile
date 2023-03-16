@@ -1,4 +1,5 @@
-# DESAFIO - EVALUACIÓN HTML - CSS - HITGUB
+# DESAFIO - EVALUACIÓN HTML - CSS - HITHUB
+https://claudiapirela.github.io/Evaluaci-n_ViajesChile/
 ## Realizado por: Claudia Pirela - 15-03-2023
 
 # RECORDAR COMANDOS PARA GIT
@@ -60,7 +61,7 @@ Para crear el repositorio remoto de GitHub
 Recomendación: Copiar el link cuando crea nuevo repositorio
 desde el GitHub y pegar.
 ```bash
-git remote ruta_del_gitHub
+git remote add origin ruta_del_gitHub
 ```
 Para subir a GitHub.
 ```bash
