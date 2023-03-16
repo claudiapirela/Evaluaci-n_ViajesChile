@@ -7,6 +7,14 @@
     background-color: initial;
 }
 
+/* SECCION MAIN */
+main{
+    background-color: black;
+}
+
+h1{
+  color: white;  
+}
 
 /* PARA SEPARAR LA ETIQUETA NAV QUE TAPA EL MAIN  por eso se coloca + la siguiente -- ***CUANDO SE TAPA EL TEXTO*/
 .navbar + header{
