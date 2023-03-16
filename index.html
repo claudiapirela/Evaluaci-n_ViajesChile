@@ -32,7 +32,7 @@
     <!-- LA CLASE FIXED-TOP QUEDA LA BARRA DE NAVEGACIÓN F I J A EN LA PARTE SUPERIOR  -->
     <nav class="navbar navbar-expand-lg nav_color fixed-top">
         <div class="container-fluid ">
-            <a class="navbar-brand text-white" href="#"> <img src="assets/img/viajes.svg" alt="" width="111px"
+            <a class="navbar-brand text-white " href="#"> <img src="assets/img/viajes.svg" alt="" width="111px"
                     height="24px">Viajes Chile</a>
             <button class="navbar-toggler navbar-dark border-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -92,7 +92,7 @@
         <!-- SECCIÓN ¿QUIÉNES SOMOS? -->
         <section class="container  formato_form" id="sectionQuienes">
             <h1 class="text-center text-white">¿QUIÉNES SOMOS?</h1>
-            <hr>
+            <hr class="text-white">
             <!-- DIVISIÓN PARA LOS ICONOS Y SUS TEXTOS LOREM -->
 
             <div class="d-flex py-4">
@@ -128,10 +128,10 @@
         </section>
         <!-- SECCIÓN DESTACADOS -->
         <!-- SECCIÓN DE TARJETA CON IMAGENES  clase CONTAINER para no verlo tan pegados fijos / CONTAINER-FLUID para ir de canto a canto-->
-        <section class="container" id="sectionDestacados" >
-            <div >
+        <section class="container" id="sectionDestacados">
+            <div>
                 <h1 class="text-center text-white">DESTACADOS</h1>
-                <br>
+                <hr class=text-white>
                 <!-- ESTE DIV ES PARA LAS FILAS DEL GRID -->
                 <div class="row">
                     <!-- ESTE DIV ES PARA LAS COLUMNAS sm-12: para ver 1 imagen  y col-md-3 se va a ver 4 columnas con card-imagen    -->
@@ -153,7 +153,8 @@
                         <div class="card" style="width: 250px;">
                             <img src="assets/img/card2.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-info">
-                                <p class="card-text text-white">Some quick example text to build on the card title and make up the
+                                <p class="card-text text-white">Some quick example text to build on the card title and
+                                    make up the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -165,7 +166,8 @@
                         <div class="card" style="width: 250px;">
                             <img src="assets/img/card3.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-info">
-                                <p class="card-text text-white ">Some quick example text to build on the card title and make up the
+                                <p class="card-text text-white ">Some quick example text to build on the card title and
+                                    make up the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -177,7 +179,8 @@
                         <div class="card" style="width: 250px;">
                             <img src="assets/img/card4.jpg" class="card-img-top" alt="...">
                             <div class="card-body bg-info">
-                                <p class="card-text text-white ">Some quick example text to build on the card title and make up the
+                                <p class="card-text text-white ">Some quick example text to build on the card title and
+                                    make up the
                                     bulk of the card's content.</p>
                             </div>
                         </div>
@@ -189,7 +192,7 @@
         <section class="container text-center formato_form">
             <div>
                 <h1 class="text-center text-white">CONTACTO</h1>
-                <br>
+                <hr class=text-white>
                 <!-- CON LA CLASE TEXT-STRAR SE VA TODO EL TEXTO A LA IZQUIERDA -->
                 <form class="text-start">
                     <div class="mb-3 text-white">
@@ -215,7 +218,7 @@
         </section>
     </main>
     <!-- SECCIÓN PIE DE PÁGINA         -->
-    <footer class="container-fluid text-white bg-info">
+    <footer class="container-fluid text-white bg-info ">
         <!-- SECCION DE ICONOS DE REDES SOCIALES -->
         <!-- LA CLASE CONTAINER-FLUID SE CENTRA  -->
         <section class="container-fluid" id="sectionContacto">
@@ -227,11 +230,16 @@
                 <!-- PARA AGREGAR LOS ICONOS DE REDES SOCIALES -->
                 <div class="col-md-9 my-1 iconos_centrado">
                     <!-- PARA COLOCAR DENTRO DE ESTA CAJA SE AGREGA UNA NUEVA CAJA CON 9 COLUMNAS -->
-                    <!-- data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub -->
-                   <a href="https://github.com/"><i class="fa-brands fa-github mx-1 fondo_iconos"></i></a> 
-                   <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin mx-1 fondo_iconos"></i></a> 
-                   <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter mx-1 fondo_iconos"></i></a> 
-                   <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook mx-1 fondo_iconos"></i></a> 
+                    <!-- PARA COLOCAR TITULO AL MOVER EL MOUSE EN LOS ICONOS
+                        data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub" -->
+                    <a href="https://github.com/"><i class="fa-brands fa-github mx-2 fa-2x text-white"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="GitHub"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x mx-2 text-white"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Linkedin"></i></a>
+                    <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-twitter fa-2x mx-2 text-white"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"></i></a>
+                    <a href="https://es-la.facebook.com/"><i class="fa-brands fa-facebook fa-2x mx-2 text-white"
+                            data-bs-toggle="tooltip" data-bs-placement="top" title="Facebook"></i></a>
                 </div>
             </div>
 
@@ -242,7 +250,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-
+    <!-- CONECTANDO CON JAVASCRIPT     -->
+    <script src="assets/js/javascript.js"></script>
 </body>
 
 </html>

@@ -40,7 +40,12 @@ h1{
 /* COLOR BLANCO A LOS ICONOS REDES SOCIALES */
 fondo_iconos{
     color: #fff;
-    justify-content: center;
+   
+}
+/* FORMATO PIE DE PAGINA */
+footer {
+    height: 60px;
     text-align: center;
+    padding: 1rem;
 }
 
