@@ -11,14 +11,35 @@ Para agregar todos los cambios
 git add .
 git add --all
 ```
-Para crear el commit
+Usar el commit con el git add todo en uno
+Con archivos ya creados
 ```bash
-git commit -m "nombre del commit
+git commit -am "titulo del commit
 ```
 Para Regresar a estado normal del último commit (DESHACER)
 ```bash
 git reset .
 ```
+Para reconstruir todo los archivos 
+y modificaciones sobre el último commit.
+```bash
+git checkout --
+```
+Para conocer cuantos commit se han realizado.
+```bash
+git log
+```
+Para cambiar el nombre del último nombre, 
+pulsar la letra "w" y la letra "a" para iniciar a modificar, 
+para guardar ESC y luego wq! y enter
+```bash
+git commit --amend
+```
+Para crear una rama.
+```bash
+git branch nombre_rama
+```
+
 
 # RECORDAR PASOS PARA GITHUB
 ```
